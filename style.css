@@ -241,15 +241,13 @@ margin-bottom: 40px;
     margin-bottom: 20px;
 }
 
-.services-container{
+.container{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.services-container-div{
-    text-align: center;
-}
+
 .services-container-div h2{
     font-size: 15px;
     letter-spacing: 2px;
@@ -274,115 +272,80 @@ margin-bottom: 40px;
     font-size: 20px; 
 }
 
-.services-card{
-    /* display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
-    text-align: center;  */
 
+
+.services-card{
     display: flex;
     flex-direction: row;
     text-align: center;
-    justify-content: center; 
-    
+    justify-content: center;
+    font-size: 14px; 
 }
 
-.card-one{ 
-    /* grid-area: a; */
+.card{ 
     background-color: rgb(254, 255, 255);
     margin: 10px;
+    padding: 10px;
     border-radius: 2px;
     border: 1px solid rgb(250, 247, 247);
-    box-shadow: 0px 0px 30px rgb(177, 176, 176);
+    box-shadow: 0px 0px 40px rgb(238, 233, 233);
 }
-.card-one:hover{
+.card:hover {
     background: #eb3959;
-    transition-duration: 3s;
+    transition-duration: 1s;
+    color: white;
+}
+.card:hover .icon a{
+    color:#fff;
 }
 
-
-
-.card-one i{
-   
-}
-
-
-
-.card-two{
-    /* grid-area: b; */
-    background-color: rgb(254, 255, 255);
-    margin: 10px;
-    border-radius: 2px;
-    border: 1px solid rgb(250, 247, 247);
-    box-shadow: 0px 0px 20px rgb(177, 176, 176);
-}
-.card-two:hover{
-    background: #eb3959;
-    transition-duration: 3s;
-}
-
-
-
-.card-three{
-    /* grid-area: c; */
-    background-color: rgb(254, 255, 255);
-    margin: 10px;
-    border-radius: 2px;
-    border: 1px solid rgb(250, 247, 247);
-    box-shadow: 0px 0px 30px rgb(177, 176, 176);
-}
-.card-three:hover{
-    background: #eb3959;
-    transition-duration: 3s;
-}
-
-
-
-.card-four{
-    /* grid-area: d; */
-    background-color: rgb(254, 255, 255);
-    margin: 10px;
-    border-radius: 2px;
-    border: 1px solid rgb(250, 247, 247);
-    box-shadow: 0px 0px 30px rgb(177, 176, 176);
-}
-.card-four:hover{
-    background: #eb3959;
-    transition-duration: 3s;
-}
 .icon a{
-
+    font-size: 48px;
+    line-height: 1;
+    color: #e43c5c;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+.icon{
+    margin-bottom: 20px;
 }
 
-
-.icon-sign{
-    color: #f50b0b;
-    font-size: 40px;
-}
 
 .icon-head a{
-    color: #070707;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+    /* color: #070707;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 0px; */
 }
 
 
 
 .description{
-    color: #0c0c0c;
-    font-size: 20px;
-    padding: 20px;
+    font-size: 15px;
+    line-height: 28px;
+    margin-top: 10px;
 }
 
 
 .icon-box{
-    text-align: center;
-    height: 300px;
+    padding: 40px 30px;
+    /* position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 2px 0 35px 0 rgb(68 88 144 / 12%);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+    text-align: center; */
+
+    /* text-align: center;
+    height: 300px; */
 }
 
-
-
 /* --------SECTION SERVICE END--------- */
+
 
 
 
@@ -400,16 +363,22 @@ margin-bottom: 40px;
     margin: 10px;
     border-radius: 2px;
     border: 1px solid rgb(250, 247, 247);
-    box-shadow: 0px 0px 30px rgb(177, 176, 176);
+    box-shadow: 0px 0px 30px rgb(238, 233, 233);
     padding: 20px;
 }
+
 a{
    color: #070707;
+}
+.box1 a:hover{
+    color: red;
 }
 
 
 
 /* ------FEATURES SECTION END--------- */
+
+
 
 
 /* -------cta section start---------- */
@@ -458,9 +427,7 @@ a{
     margin-bottom: 20px;
 }
 
-.portfolio-container{
-    /* display: flex;
-    flex-direction: column; */
+.container{
     width: 100%;
 }
 
@@ -498,21 +465,32 @@ a{
     display: flex;
     justify-content: center;
 }
-.portfolio-card1{
+.portfolio-card ul{
+    display:flex;
+}.portfolio-card ul li{
+    padding: 10px 20px;
+}
+.portfolio-card ul li:hover a{
+    background-color: #e43c5c;
+    color:#ede9e9;
+}
+.portfolio-card ul li a{
     cursor: pointer;
     display: inline-block;
     padding: 7px 17px 9px 17px;
     font-size: 14px;
     font-weight: 500;
     line-height: 1;
-    color: #ede9e9;
+    color: #444444;
     margin: 0 3px 10px 3px;
-    transition: all ease-in-out 0.3s;
-    background: #e43c5c;
+    transition:.3s all  ease-in;
     border-radius: 50px;
 }
-
-.portfolio-card2{
+.portfolio-card ul li a.active{
+    background-color: #e43c5c;
+    color:#ede9e9;
+}
+/* .portfolio-card2{
     cursor: pointer;
     display: inline-block;
     padding: 7px 17px 9px 17px;
@@ -528,42 +506,247 @@ a{
 .portfolio-card2:hover{
     background-color: #e43c5c;
     color:#ede9e9;
+} */
+ /* portfolio items */
+.portfolio-items-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
-.portfolio-card3{
-    cursor: pointer;
-    display: inline-block;
-    padding: 7px 17px 9px 17px;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1;
-    color: #444444;
-    margin: 0 3px 10px 3px;
-    transition: all ease-in-out 0.3s;
-    background:  #ede9e9;
-    border-radius: 50px;
-}
-.portfolio-card3:hover{
-    background-color: #e43c5c;
-    color:#ede9e9;
+.portfolio-item img{
+    width: 100%;
 }
 
-.portfolio-card4{
-    cursor: pointer;
-    display: inline-block;
-    padding: 7px 17px 9px 17px;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1;
-    color: #444444;
-    margin: 0 3px 10px 3px;
-    transition: all ease-in-out 0.3s;
-    background:  #ede9e9;
-    border-radius: 50px;
+
+
+/* Fortfolio item*/
+.portfolio-item{
+    position: relative;
 }
-.portfolio-card4:hover{
-    background-color: #e43c5c;
-    color:#ede9e9;
+.portfolio-info{
+    position: absolute;
+    background-color: rgba(0,0,0,.4);
+    left:0;
+    right:0;
+    bottom:-50px;
+    display: flex;
+    justify-content: space-around;
+    color:#fff;
+    opacity: 0;
+    transition: .5s all ease-in;
+
+}
+.portfolio-item:hover a{
+color: red;
+}
+.portfolio-item:hover .portfolio-info {
+    opacity: 1;
+    bottom:0;
+}
+
+.portfolio-info a{
+    color:#fff;
 }
 
 /* --------PORTFOLIO END--------- */
+
+
+
+/* ------SECTION pricing START------- */
+
+.pricing{
+    width: 100%;
+}
+
+.container{
+    text-align: center;
+}
+
+.section-title{
+
+}
+.section-title h2{
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 8px 20px;
+    margin-top: 40px;
+    background-color: rgb(252, 241, 241);
+    color: #eb3959;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+.section-title h3{
+    margin-top: 30px;
+    font-size: 35px;
+}
+.section-title h3 span{
+    color: #eb3959;
+}
+.section-title p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14px; 
+    font-weight: 600px;
+}
+
+
+.three-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.box-style{
+    padding: 40px 100px 0px 100px;
+    background: #f9f9f9;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #f9f9f9;
+    margin: 10px;
+    font-size: 14px;
+}
+/* .three-box-first{
+    padding: 20px;
+    background: #f9f9f9;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #f9f9f9;
+    margin-right: 10px;
+}
+
+.three-box-second{
+    padding: 0px 50px 0px 50px;
+    background: #f9f9f9;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #fa0b0b;
+    
+}
+.three-box-third{
+    padding: 20px;
+    background: #f9f9f9;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #f9f9f9;
+    margin-left: 10px;
+} */
+
+.box-style h3{
+    font-weight: 400;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #493c3e;
+}
+.box-style h4{
+    font-size: 42px;
+    color: #e43c5c;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 20px;
+}
+.box-style h4 span{
+    color: #bababa;
+    font-size: 16px;
+    font-weight: 300;
+}
+.box-style ul .na {
+    color: #ccc;
+    text-decoration: line-through;
+}
+.box-style ul li {
+    padding-bottom: 16px
+}
+.btn-buy{
+    font-family: "Nunito", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 25px;
+    transition: 0.5s;
+    margin-bottom: 10px;
+    border: 2px solid #e43c5c;
+    color: #e43c5c;
+}
+.btn-buy:hover {
+    background: #e43c5c;
+    border: 2px solid #e43c5c;
+    color: #f9f9f9;
+}
+
+
+
+
+.box-style-recommended{
+    padding: 10px 100px 0px 100px;
+    border: 2px solid #fa0b0b;
+
+}
+.recommended{
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 8px 20px;
+    /* margin-top: 40px; */
+    background-color: rgb(252, 241, 241);
+    color: #eb3959;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+.icon-box-recommended h3{
+    margin-top: 20px;
+}
+.box-style-recommended .btn-buy{
+    /* border: 2px solid #e43c5c; */
+    background-color: #ee4665;
+    color: #f9f9f9;
+}
+.box-style-recommended .btn-buy:hover{
+    background: #e43c5c;
+    border: 2px solid #e43c5c;
+    color: #f9f9f9;
+}
+/* ------SECTION pricing END------- */
+
+
+
+/* ------F.A.Q Section ‍start-------- */
+.faq {
+    padding: 60px 0;
+  }
+  .faq .faq-list {
+    padding: 0;
+    list-style: none;
+  }
+  .faq .faq-list li {
+    border-bottom: 1px solid #f1eeef;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .faq .faq-list .question {
+    display: block;
+    position: relative;
+    font-family: #e43c5c;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-left: 25px;
+    cursor: pointer;
+    color: #d01d3f;
+    transition: 0.3s;
+  }
+
+  /* ------F.A.Q Section end-------- */
