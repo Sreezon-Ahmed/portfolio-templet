@@ -549,6 +549,12 @@ color: red;
     color:#fff;
 }
 
+.portfolio-item:hover img{
+    top: -10px;
+    position: relative;
+    overflow: hidden;
+}
+
 /* --------PORTFOLIO END--------- */
 
 
